@@ -1,7 +1,7 @@
 import React from "react";
 
 const Agents = () => {
-  return <div>Agents</div>;
+  return <div id="agents">Agents</div>;
 };
 
 export default Agents;
