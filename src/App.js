@@ -1,3 +1,4 @@
+import AgentAPI from './api/AgentAPI';
 import Agents from './pages/Agents';
 import Footer from './pages/Footer';
 import Header from './pages/header/Header';
@@ -15,6 +16,7 @@ function App() {
     <Maps/>
     <Weapons/>
     <Footer/>
+    <AgentAPI/>
     </>
   );
 }

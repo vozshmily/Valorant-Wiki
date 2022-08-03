@@ -1,13 +1,19 @@
 import React from "react";
 import videoBg from "../../assets/agent-background-generic.mp4";
+import "../header/header.css";
+import { useState, useEffect } from "react";
 
-const Header = () => {
+const Header = ({ getAgents }) => {
+  console.log(getAgents);
+
   return (
-    <div>
-      <div>
-        <video src={videoBg} muted loop autoPlay></video>
+    <div className="main__container">
+      <div className="sub__container">
+        <div>
+          <video src={videoBg} muted loop autoPlay></video>
+        </div>
+        <div className="agents__header wrapper">List of agents</div>
       </div>
-      <div>List of agents</div>
 
       <div>Agent Logo</div>
 

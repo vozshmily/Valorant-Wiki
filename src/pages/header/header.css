@@ -1,0 +1,13 @@
+.main__container{
+    outline: 3px solid black;
+    height: 30rem;
+}
+
+.sub__container{
+    outline: 3px solid black;
+    height: 20rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
