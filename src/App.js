@@ -3,7 +3,7 @@ import Header from './pages/header/Header';
 import Maps from './pages/Maps';
 import Nav from './pages/Nav';
 import Weapons from './pages/Weapons';
-import Abilities from './pages/abilities/Abilities';
+import Abilities from './Abilities/Abilities';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <>
     <Header/>
     <Nav/>
-    <Abilities />
+    {/* <Abilities /> */}
     <Maps/>
     <Weapons/>
     <Footer/>
