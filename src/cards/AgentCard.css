@@ -1,4 +1,5 @@
 .agent__card__main{
+    outline: 3px solid green;
     flex-direction: column;
 }
 .agent__image{
@@ -8,4 +9,65 @@
     transform: translateX(-50%);
     flex-direction: column;
     margin-top: -450px;
+}
+
+.agent__info{
+    outline: 3px solid blue;
+    position: absolute;
+    left: 70%;
+    transform: translateX(-30%);
+    flex-direction: column;
+    margin-top: -400px;
+    color: white;
+    position: absolute;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.about__card h5{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.about__card small{
+    font-size: 0.7rem;
+    color: var(--color-light);
+    margin: .2rem;
+}
+
+.about__content p{
+    font-size: 1rem;
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+}
+
+
+/* ===================MEDIUM DEVICES=======================*/
+
+@media screen and (max-width: 1024px)  {
+    .agent__image{
+        left: 50%;
+        transform: translateX(-40%);
+    }
+
+    .agent__info{
+        left: 70%;
+        transform: translateX(-20%);
+    }
+}
+
+/* ===================SMALL DEVICES=======================*/
+
+@media screen and (max-width: 600px)  {
+
+    .agent__image{
+        left: 50%;
+        transform: translateX(-30%);
+    }
+
+
+    .about__card{
+        display: none;
+    }
+    
 }

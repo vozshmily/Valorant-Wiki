@@ -10,8 +10,40 @@
   display: none;
 }
 
+:root{
+  --color-bg: #ece8e1;
+  --color-bg-variant: #ff4655;
+  --color-primary: #4db5ff;
+  --color-primary-variant: #ff4655;;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
 body{
   background-image: url("/src/assets/texture-light.jpg");
   background-color: #ece8e1;
   z-index: -10;
+}
+
+
+.about__card{
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  border-color: var(--color-primary-variant);
+  transition: var(--transition);
+  width: 18rem;
+}
+
+.about__card:hover{
+  background: var(--color-bg-variant);
+  border-color: var(--color-primary-variant);
+  cursor: default;
 }

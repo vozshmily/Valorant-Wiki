@@ -1,7 +1,7 @@
 .main__container{
     outline: 3px solid black;
-    height: 35rem;
-    flex-direction: column;
+    height: 40rem;
+
 }
 
 .sub__container{
