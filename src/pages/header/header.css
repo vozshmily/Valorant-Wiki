@@ -1,13 +1,54 @@
 .main__container{
-    outline: 3px solid black;
-    height: 30rem;
+   
+    height: 35rem;
+
 }
 
 .sub__container{
-    outline: 3px solid black;
-    height: 20rem;
+    
+    height: 30rem;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+
+}
+
+.img__container{
+    
+    height: 30rem;
+    overflow: hidden !important;
     position: relative;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+}
+
+img{
+    
+    object-fit: cover;
+}
+
+
+.agents__header{
+    outline: 3px solid red;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1__font{
+    color: black;
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.wrapper{
+    
+    height: 30rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    cursor: default;
 }
