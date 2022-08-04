@@ -1,0 +1,11 @@
+.agent__card__main{
+    flex-direction: column;
+}
+.agent__image{
+    outline: 3px solid blue;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    margin-top: -450px;
+}

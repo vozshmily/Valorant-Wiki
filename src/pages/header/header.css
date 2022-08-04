@@ -1,54 +1,59 @@
 .main__container{
-   
+    outline: 3px solid black;
     height: 35rem;
-
+    flex-direction: column;
 }
 
 .sub__container{
-    
     height: 30rem;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-
+    position: relative;
+    
 }
 
 .img__container{
-    
     height: 30rem;
-    overflow: hidden !important;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-img{
-    
-    object-fit: cover;
-}
-
-
-.agents__header{
-    outline: 3px solid red;
+    overflow: hidden;
     position: absolute;
+    z-index: -1;
+}
+
+.agents__container{
+    outline: 3px solid red;
     z-index: 1000;
-    top: 0;
-    justify-content: center;
-    align-items: center;
+    left: 40%;
+    transform: translateX(-60%);
+    position: absolute;
 }
 
 .h1__font{
-    color: black;
+    color: white;
     font-size: 2rem;
     font-weight: 1000;
 }
 
 .wrapper{
-    
     height: 30rem;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
     cursor: default;
+}
+
+/* ===================MEDIUM DEVICES=======================*/
+
+@media screen and (max-width: 1024px)  {
+    .agents__container{
+        left: 40%;
+        transform: translateX(-70%);
+    }
+}
+
+/* ===================SMALL DEVICES=======================*/
+
+@media screen and (max-width: 600px)  {
+    .agents__container{ 
+        left: 40%;
+        transform: translateX(-80%);
+    }
+    
 }

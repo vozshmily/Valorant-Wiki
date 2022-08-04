@@ -1,13 +1,16 @@
 import React from "react";
 import imageBG from "../../assets/agent-background-generic.JPG";
-import "../header/header.css";
+import videoBg from "../../assets/agent-background-generic.mp4";
+import "../header/Header.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import AgentCard from "../../cards/AgentCard";
 
 const Header = () => {
   const API = "https://valorant-api.com/v1/agents?isPlayableCharacter=True";
 
   const [agents, setAgents] = useState([]);
+  const [agentInfos, setagentInfos] = useState();
 
   useEffect(() => {
     fetchData();
@@ -27,14 +30,15 @@ const Header = () => {
     <div className="main__container">
       <div className="sub__container">
         <div className="img__container">
-          <img className="img__bg" src={imageBG} alt="BG"></img>
+          <video src={videoBg} muted loop autoPlay></video>
         </div>
-        <div className="agents__header">
+
+        <div className="agents__container">
           <div className="wrapper">
             {agents.map((agent) => (
               <div
                 key={agent.uuid}
-                // onClick={(agentInfos) => setagentInfos(agent)}
+                onClick={(agentInfos) => setagentInfos(agent)}
               >
                 <i className="h1__font">{agent.displayName.toUpperCase()}</i>
               </div>
@@ -42,10 +46,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-
-      <div>Agent Logo</div>
-
-      <div>aaaaaa</div>
+      <AgentCard getAgent={agentInfos} />
     </div>
   );
 };
