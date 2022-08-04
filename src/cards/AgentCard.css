@@ -18,11 +18,15 @@
     transform: translateX(-30%);
     flex-direction: column;
     margin-top: -400px;
-    color: white;
+    color: #8b978f;
     position: absolute;
     font-weight: 300;
     font-size: 0.9rem;
 }
+
+.about__card:hover{
+    color: #fff;
+  }
 
 .about__card h5{
     font-size: 1.5rem;

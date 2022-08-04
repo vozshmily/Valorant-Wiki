@@ -1,0 +1,47 @@
+.abilities__container{
+    outline: 3px solid red;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    top: 3rem;
+    
+}
+
+.agent__logo__card{
+    outline: 3px solid green;
+}
+
+.logo-and-disciption__container{
+    outline: 4px solid purple;
+    width: 20rem;
+}
+
+.abilities-logo__container{
+    height: 3rem;
+    width: 3rem;
+    outline: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem;
+    display: inline-block;
+    
+}
+
+.abilities-info__container{
+    width: 300;
+}
+
+
+/* ===================MEDIUM DEVICES=======================*/
+
+@media screen and (max-width: 1024px)  {
+ 
+}
+
+/* ===================SMALL DEVICES=======================*/
+
+@media screen and (max-width: 600px)  {
+    .agent__logo__card{
+        display: none;
+    }
+}

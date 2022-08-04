@@ -26,10 +26,15 @@
 }
 
 .h1__font{
-    color: white;
+    color: #ff4655;
     font-size: 2rem;
     font-weight: 1000;
 }
+
+.h1__font:hover{
+    color: #fff;
+  }
+
 
 .wrapper{
     height: 30rem;
