@@ -12,6 +12,7 @@ const Header = () => {
 
   const [agents, setAgents] = useState([]);
   const [agentInfos, setagentInfos] = useState();
+  const [reset, setReset] = useState(false);
   // const [agentAbilities, setagentAbilities] = useState();
 
   useEffect(() => {
@@ -40,7 +41,10 @@ const Header = () => {
               {agents.map((agent) => (
                 <div
                   key={agent.uuid}
-                  onClick={(agentInfos) => setagentInfos(agent)}
+                  onClick={() => {
+                    setagentInfos(agent);
+                    setReset(false);
+                  }}
                 >
                   <i className="h1__font">{agent.displayName.toUpperCase()}</i>
                 </div>
@@ -50,7 +54,7 @@ const Header = () => {
         </div>
         <AgentCard getAgent={agentInfos} />
       </div>
-      <Abilities getAgent={agentInfos} />
+      <Abilities getAgent={agentInfos} getReset={reset} />
     </>
   );
 };

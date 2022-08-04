@@ -1,12 +1,11 @@
 
 
 .abilities__container{
+    margin-top: 1rem;
     outline: 3px solid red;
     height: 20rem;
     display: flex;
     justify-content: center;
-    top: 3rem;
-    
 }
 
 .agent__logo__card{
@@ -32,6 +31,7 @@
 .abilities-info__container{
     outline: 4px solid rgb(74, 43, 255);
     display: flexbox;
+    margin: .2rem;
 }
 
 h1{

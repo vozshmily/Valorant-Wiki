@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Abilities.css";
 
-const Abilities = ({ getAgent }, { defaultSkill }) => {
-  console.log(defaultSkill);
+const Abilities = ({ getAgent }, { getReset }) => {
+  const [skills, getSkills] = useState();
+  const [update, setUpdate] = useState();
+
+  console.log(getReset);
   return (
     <div className="abilities__container">
       {!getAgent ? (
@@ -11,7 +14,7 @@ const Abilities = ({ getAgent }, { defaultSkill }) => {
         <>
           <div className="agent__logo__card">
             <img
-              src={getAgent.displayIcon}
+              src={getAgent.background}
               alt="LOGO"
               width={250}
               height={250}
@@ -23,7 +26,10 @@ const Abilities = ({ getAgent }, { defaultSkill }) => {
                 <div className="abilities-logo__container">
                   <img
                     src={agent.displayIcon}
-                    // onClick={(skills) => getSkills(agent.abilities.displayName)}
+                    onClick={() => {
+                      getSkills(agent);
+                      setUpdate();
+                    }}
                     alt="skill1"
                     width={50}
                     height={50}
@@ -32,16 +38,23 @@ const Abilities = ({ getAgent }, { defaultSkill }) => {
               ))}
 
               <div className="abilities-info__container">
-                <h1>{getAgent.abilities[0].displayName}</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                  porro laudantium consequatur in nemo, odit facilis modi
-                  debitis rem dignissimos sapiente voluptates ad totam velit
-                  quam illum odio fuga. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Fugit porro laudantium consequatur in nemo,
-                  odit facilis modi debitis rem dignissimos sapiente voluptates
-                  ad totam velit quam illum odio fuga.
-                </p>
+                {!getReset ? (
+                  <>
+                    <h1>Q - {getAgent.abilities[0].displayName}</h1>
+                    <p>{getAgent.abilities[0].description}</p>
+                  </>
+                ) : (
+                  <>
+                    {!skills ? (
+                      ""
+                    ) : (
+                      <>
+                        <h1>{skills.displayName}</h1>
+                        <p>{skills.description}</p>
+                      </>
+                    )}
+                  </>
+                )}
               </div>
             </div>
           </div>
