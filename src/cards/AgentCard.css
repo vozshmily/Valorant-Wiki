@@ -8,7 +8,7 @@
     left: 50%;
     transform: translateX(-50%);
     flex-direction: column;
-    margin-top: -450px;
+    margin-top: -550px;
 }
 
 .agent__info{

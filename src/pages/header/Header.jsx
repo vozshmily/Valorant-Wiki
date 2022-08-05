@@ -46,7 +46,7 @@ const Header = () => {
                     setReset(false);
                   }}
                 >
-                  <i className="h1__font">{agent.displayName.toUpperCase()}</i>
+                  <h5 className="h1__font">{agent.displayName}</h5>
                 </div>
               ))}
             </div>

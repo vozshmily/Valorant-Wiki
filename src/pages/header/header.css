@@ -5,13 +5,13 @@
 }
 
 .sub__container{
-    height: 30rem;
+    height: 35rem;
     position: relative;
     
 }
 
 .img__container{
-    height: 30rem;
+    height: 35rem;
     overflow: hidden;
     position: absolute;
     z-index: -1;
@@ -27,7 +27,7 @@
 
 .h1__font{
     color: #ff4655;
-    font-size: 2rem;
+    font-size: 3.2rem;
     font-weight: 1000;
 }
 
@@ -37,6 +37,7 @@
 
 
 .wrapper{
+    margin-top: 5rem;
     height: 30rem;
     overflow-y: auto;
     overflow-x: hidden;

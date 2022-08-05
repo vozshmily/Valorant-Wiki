@@ -30,7 +30,7 @@ const Abilities = ({ getAgent }, { getReset }) => {
             <div>
               {getAgent.abilities.slice(0, 4).map((agent) => (
                 <div className="abilities-logo__container">
-                  <img
+                  <img className="abilities__logo"
                     src={agent.displayIcon}
                     onClick={() => {
                       getSkills(agent);

@@ -21,6 +21,10 @@
     justify-content: center;
 }
 
+.abilities__logo{
+    color: black;
+}
+
 .logo-and-disciption__container{
     outline: 4px solid purple;
     width: 20rem;
