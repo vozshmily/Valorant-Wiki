@@ -12,12 +12,7 @@ const AgentCard = ({ getAgent }) => {
         ) : (
           <>
             <div className="agent__image">
-              <img
-                src={getAgent.fullPortraitV2}
-                alt="icons"
-                width={600}
-                height={600}
-              />
+              <img src={getAgent.fullPortraitV2} alt="icons" height={650} />
             </div>
             <div className="agent__info">
               <article className="about__card">

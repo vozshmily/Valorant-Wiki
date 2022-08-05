@@ -11,7 +11,7 @@ const Nav = () => {
       <Link to="/Maps" className="site__nav__p">
         MAPS
       </Link>
-      <Link to="/Arsenals" className="site__nav__p">
+      <Link to="/Arsenal" className="site__nav__p">
         ARSENAL
       </Link>
     </nav>

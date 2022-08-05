@@ -1,0 +1,25 @@
+.arsenal__main{
+    margin-top: 1rem;
+    outline: 3px solid red;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.arsenal__header{
+    display: inherit;
+}
+
+.text__header{
+    outline: 3px solid black;
+}
+
+.text__header.h1__font{
+    color: #4a574e;
+    font-size: 3.2rem;
+    font-weight: 1000;
+}
+
+.filter__header{
+    outline: 3px solid green;
+}

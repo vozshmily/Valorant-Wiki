@@ -3,7 +3,7 @@ import Header from './pages/header/Header';
 import Maps from './pages/Maps';
 import Nav from './pages/nav/Nav';
 import {Route, Routes} from 'react-router-dom'
-import Arsenals from './pages/arsenal/Arsenals';
+import Arsenal from './pages/arsenal/Arsenal';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Header/>}/>
       <Route path='/Maps' element={<Maps/>}/>
-      <Route path='/Arsenals' element={<Arsenals/>}/>
+      <Route path='/Arsenal' element={<Arsenal/>}/>
     </Routes>
     <Footer/>
     </>
