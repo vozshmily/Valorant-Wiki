@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Abilities from "../Abilities/Abilities";
 import "../cards/AgentCard.css";
 

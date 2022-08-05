@@ -28,6 +28,7 @@
     color: #fff;
   }
 
+
 .about__card h5{
     font-size: 1.5rem;
     margin-bottom: .5rem;
@@ -42,7 +43,6 @@
 .about__content p{
     font-size: 1rem;
     margin: 2rem 0 2.6rem;
-    color: var(--color-light);
 }
 
 

@@ -3,22 +3,28 @@ import "./Abilities.css";
 
 const Abilities = ({ getAgent }, { getReset }) => {
   const [skills, getSkills] = useState();
-  const [update, setUpdate] = useState();
+  const [reset, setReset] = useState(false);
 
-  console.log(getReset);
+  console.log(reset);
   return (
     <div className="abilities__container">
       {!getAgent ? (
         ""
       ) : (
         <>
+          {/* {setReset(getReset)} */}
           <div className="agent__logo__card">
-            <img
-              src={getAgent.background}
-              alt="LOGO"
-              width={250}
-              height={250}
-            ></img>
+            <div>
+              <h1>SPECIAL ABILITIES</h1>
+            </div>
+            <div>
+              <img
+                src={getAgent.background}
+                alt="LOGO"
+                width={250}
+                height={250}
+              ></img>
+            </div>
           </div>
           <div className="logo-and-disciption__container">
             <div>
@@ -28,7 +34,7 @@ const Abilities = ({ getAgent }, { getReset }) => {
                     src={agent.displayIcon}
                     onClick={() => {
                       getSkills(agent);
-                      setUpdate();
+                      setReset(true);
                     }}
                     alt="skill1"
                     width={50}
@@ -38,9 +44,9 @@ const Abilities = ({ getAgent }, { getReset }) => {
               ))}
 
               <div className="abilities-info__container">
-                {!getReset ? (
+                {!reset ? (
                   <>
-                    <h1>Q - {getAgent.abilities[0].displayName}</h1>
+                    <h1>{getAgent.abilities[0].displayName}</h1>
                     <p>{getAgent.abilities[0].description}</p>
                   </>
                 ) : (

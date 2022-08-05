@@ -17,7 +17,7 @@ const Header = () => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [reset]);
 
   const fetchData = async () => {
     const { data } = await axios.get(API);

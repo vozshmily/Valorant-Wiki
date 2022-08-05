@@ -9,7 +9,16 @@
 }
 
 .agent__logo__card{
+    outline: 3px solid pink;
+}
+.agent__logo__card h1{
     outline: 3px solid green;
+    color: #4a574e;
+    margin-top: 2rem;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .logo-and-disciption__container{
@@ -34,13 +43,13 @@
     margin: .2rem;
 }
 
-h1{
+.abilities-info__container h1{
     color: #768079;
     font-size: 1.5rem;
     margin-bottom: .5rem;
 }
 
-p{
+.abilities-info__container p{
     color: #768079;
     font-size: .8rem;
     margin: .2rem;

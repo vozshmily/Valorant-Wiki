@@ -1,9 +1,9 @@
 import Footer from './pages/Footer';
 import Header from './pages/header/Header';
 import Maps from './pages/Maps';
-import Nav from './pages/Nav';
 import Weapons from './pages/Weapons';
 import Abilities from './Abilities/Abilities';
+import Nav from './nav/Nav';
 
 
 function App() {
