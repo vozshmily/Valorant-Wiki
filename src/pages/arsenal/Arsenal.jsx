@@ -16,7 +16,20 @@ const Arsenal = () => {
           </div>
         </div>
       </div>
-      <div className="weapon__details__main">2</div>
+      <div className="weapon__details__main">
+        <div className="weapon__card">
+          <img
+            src="https://media.valorant-api.com/weaponskins/94c085e6-48e1-c879-2552-88bf7850c5a8/displayicon.png"
+            alt="Avatar"
+          />
+          <div className="weapon__container">
+            <h4>
+              <b>John Doe</b>
+            </h4>
+            <p>Architect & Engineer</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
