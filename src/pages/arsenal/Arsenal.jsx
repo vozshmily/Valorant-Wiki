@@ -1,7 +1,25 @@
 import React from "react";
 import "../arsenal/Arsenal.css";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const Arsenal = () => {
+  const API = "https://valorant-api.com/v1/weapons";
+
+  const [weapons, setWeapons] = useState([]);
+
+  // const [agentAbilities, setagentAbilities] = useState();
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const { data } = await axios.get(API);
+    setWeapons(data.data);
+    data.data.sort((a, b) => (a.id > b.id ? 1 : -1));
+  };
+
   return (
     <>
       <div className="arsenal__main">
@@ -17,18 +35,19 @@ const Arsenal = () => {
         </div>
       </div>
       <div className="weapon__details__main">
-        <div className="weapon__card">
-          <img
-            src="https://media.valorant-api.com/weaponskins/94c085e6-48e1-c879-2552-88bf7850c5a8/displayicon.png"
-            alt="Avatar"
-          />
-          <div className="weapon__container">
-            <h4>
-              <b>John Doe</b>
-            </h4>
-            <p>Architect & Engineer</p>
+        {weapons.map((weapon) => (
+          <div className="weapon__card">
+            <img
+              className="image__icon"
+              src={weapon.displayIcon}
+              alt="Avatar"
+              width={450}
+            />
+            <div className="weapon__container">
+              <h2>{weapon.displayName}</h2>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </>
   );

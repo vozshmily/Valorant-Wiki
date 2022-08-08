@@ -23,3 +23,33 @@
 .filter__header{
     outline: 3px solid green;
 }
+
+.weapon__details__main{
+    outline: 3px solid green;
+    margin: .5rem   ;
+}
+
+.image__icon{
+    object-fit: cover;
+}
+
+.weapon__card {
+    outline: 3px solid black;
+    grid-template-columns: repeat(3, 1fr);
+    margin: .5rem;
+    display: inline-block;
+    
+}
+
+.weapon__card:hover{
+    background: var(--color-bg-variant);
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+  
+.weapon__container {
+    background-color: #0f1923;
+    color: white;
+    width: inherit;
+    padding: 2px 16px;
+}
