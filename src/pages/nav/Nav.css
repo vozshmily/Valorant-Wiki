@@ -13,9 +13,11 @@
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
+    
 }
 
 .site__nav__p{
-    outline: 3px solid red;
+    /* outline: 3px solid red; */
     color: white;
+    text-decoration: none;
 }

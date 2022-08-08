@@ -27,11 +27,11 @@ const Arsenal = () => {
           <div className="text__header">
             <h1 className="h1__font">CHOOSE YOUR WEAPON</h1>
           </div>
-          <div className="filter__header">
+          {/* <div className="filter__header">
             <form>
               <input type="submit" value="Submit" />
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="weapon__details__main">

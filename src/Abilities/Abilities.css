@@ -11,6 +11,10 @@
 .agent__logo__card{
     /* outline: 3px solid pink; */
 }
+
+.agent__logo{
+    object-fit: contain;
+}
 .agent__logo__card h1{
     /* outline: 3px solid green; */
     color: #4a574e;
@@ -23,7 +27,7 @@
 
 .abilities__logo{
     color: black;
-    
+    object-fit: contain;
 }
 
 .abilities__logo:hover{
