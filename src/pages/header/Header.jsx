@@ -33,7 +33,13 @@ const Header = () => {
       <div className="main__container">
         <div className="sub__container">
           <div className="img__container">
-            <video src={videoBg} muted loop autoPlay></video>
+            <video
+              className="img__vid"
+              src={videoBg}
+              muted
+              loop
+              autoPlay
+            ></video>
           </div>
 
           <div className="agents__container">

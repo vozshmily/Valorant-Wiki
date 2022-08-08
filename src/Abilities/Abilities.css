@@ -2,17 +2,17 @@
 
 .abilities__container{
     margin-top: 1rem;
-    outline: 3px solid red;
+    /* outline: 3px solid red; */
     height: 20rem;
     display: flex;
     justify-content: center;
 }
 
 .agent__logo__card{
-    outline: 3px solid pink;
+    /* outline: 3px solid pink; */
 }
 .agent__logo__card h1{
-    outline: 3px solid green;
+    /* outline: 3px solid green; */
     color: #4a574e;
     margin-top: 2rem;
     font-size: 1rem;
@@ -23,17 +23,24 @@
 
 .abilities__logo{
     color: black;
+    
+}
+
+.abilities__logo:hover{
+    background: var(--color-bg-variant);
+    border-color: var(--color-primary-variant);
+    cursor: default;
 }
 
 .logo-and-disciption__container{
-    outline: 4px solid purple;
+    /* outline: 4px solid purple; */
     width: 20rem;
 }
 
 .abilities-logo__container{
     height: 3rem;
     width: 3rem;
-    outline: 2px solid black;
+    /* outline: 2px solid black; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 1rem;
@@ -42,7 +49,7 @@
 }
 
 .abilities-info__container{
-    outline: 4px solid rgb(74, 43, 255);
+    /* outline: 4px solid rgb(74, 43, 255); */
     display: flexbox;
     margin: .2rem;
 }

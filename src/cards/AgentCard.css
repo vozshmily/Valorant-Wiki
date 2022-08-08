@@ -1,9 +1,9 @@
 .agent__card__main{
-    outline: 3px solid green;
+    /* outline: 3px solid green; */
     flex-direction: column;
 }
 .agent__image{
-    outline: 3px solid blue;
+    /* outline: 3px solid blue; */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -12,7 +12,7 @@
 }
 
 .agent__info{
-    outline: 3px solid blue;
+    /* outline: 3px solid blue; */
     position: absolute;
     left: 70%;
     transform: translateX(-30%);

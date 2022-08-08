@@ -1,5 +1,5 @@
 .main__container{
-    outline: 3px solid black;
+    /* outline: 3px solid black; */
     height: 40rem;
 
 }
@@ -18,13 +18,16 @@
 }
 
 .agents__container{
-    outline: 3px solid red;
+    /* outline: 3px solid red; */
     z-index: 1000;
     left: 40%;
     transform: translateX(-60%);
     position: absolute;
 }
 
+.img__vid{
+    object-fit: contain;
+}
 .h1__font{
     color: #ff4655;
     font-size: 3.2rem;

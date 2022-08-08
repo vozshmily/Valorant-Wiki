@@ -37,11 +37,15 @@
 }
 
 .weapon__card {
-    outline: 3px solid black;
+    /* outline: 3px solid black; */
     grid-template-columns: repeat(3, 1fr);
     margin: .5rem;
     display: inline-block;
-    
+    border: 1px solid transparent;
+    /* border-radius: 1rem; */
+    border-color: var(--color-primary-variant);
+    transition: var(--transition);
+  
 }
 
 .weapon__card:hover{
