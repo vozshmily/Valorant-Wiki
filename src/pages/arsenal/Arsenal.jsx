@@ -41,7 +41,6 @@ const Arsenal = () => {
               className="image__icon"
               src={weapon.displayIcon}
               alt="Avatar"
-              width={450}
             />
             <div className="weapon__container">
               <h2>{weapon.displayName}</h2>
