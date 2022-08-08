@@ -10,11 +10,17 @@
     
 }
 
+
+
 .img__container{
-    height: 35rem;
+    height: inherit;
     overflow: hidden;
     position: absolute;
     z-index: -1;
+}
+
+.img__vid{
+    object-fit: contain;
 }
 
 .agents__container{
@@ -25,9 +31,7 @@
     position: absolute;
 }
 
-.img__vid{
-    object-fit: contain;
-}
+
 .h1__font{
     color: #ff4655;
     font-size: 3.2rem;
