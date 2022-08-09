@@ -8,8 +8,6 @@ const Arsenal = () => {
 
   const [weapons, setWeapons] = useState([]);
 
-  // const [agentAbilities, setagentAbilities] = useState();
-
   useEffect(() => {
     fetchData();
   }, []);
@@ -19,6 +17,7 @@ const Arsenal = () => {
     setWeapons(data.data);
     data.data.sort((a, b) => (a.id > b.id ? 1 : -1));
   };
+  console.log(weapons.shopData);
 
   return (
     <>
@@ -44,6 +43,7 @@ const Arsenal = () => {
             />
             <div className="weapon__container">
               <h2>{weapon.displayName}</h2>
+              {/* <p>{weapon.shopData}</p> */}
             </div>
           </div>
         ))}
