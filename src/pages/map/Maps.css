@@ -1,0 +1,22 @@
+.maps__container{
+    outline: 3px solid black;
+}
+
+.maps__sub__container{
+    outline: 3px solid blue;
+}
+
+.maps__img__container{
+    outline: 3px solid green;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.maps__img__vid{
+    outline: 3px solid brown;
+    object-fit: contain;
+}
+
+.maps__img__icon{
+    object-fit: contain;
+}
