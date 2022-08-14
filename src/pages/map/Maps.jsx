@@ -8,14 +8,14 @@ const Maps = () => {
     <div className="maps__container">
       <div className="maps__sub__container"></div>
       <div className="maps__img__container">
-        {/* <video
-          className="maps__img__vid"
+        <video
+          className="maps__img__icon"
           src={videoBg}
           muted
           loop
           autoPlay
-        ></video> */}
-        <img className="maps__img__icon" src={imageBG} alt="BG" />
+        ></video>
+        {/* <img className="maps__img__icon" src={imageBG} alt="BG" /> */}
       </div>
     </div>
   );

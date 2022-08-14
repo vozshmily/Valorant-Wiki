@@ -8,7 +8,7 @@
 
 .maps__img__container{
     outline: 3px solid green;
-    height: 30rem;
+    height: 40rem;
     overflow: hidden;
 }
 
@@ -18,5 +18,8 @@
 }
 
 .maps__img__icon{
-    object-fit: contain;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 100%;
 }
