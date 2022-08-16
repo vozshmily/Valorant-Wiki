@@ -21,6 +21,8 @@
 
 .img__vid{
     object-fit: contain;
+    margin-top: -300px;
+    z-index: -1;
 }
 
 .agents__container{
